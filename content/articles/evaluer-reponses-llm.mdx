@@ -1,0 +1,36 @@
+---
+title: "Comment évaluer les réponses d'un LLM ?"
+slug: "evaluer-reponses-llm"
+summary: "Pour évaluer les réponses d'un LLM, constituez un jeu de questions de référence, définissez des critères (exactitude, citations, format), et mesurez avant/après chaque changement de prompt ou de modèle. Sans évaluation, vous naviguez à l'aveugle."
+description: "Méthodes d'évaluation LLM pour équipes tech : golden set, critères, régressions, coût et qualité."
+publishedAt: "2026-07-24"
+updatedAt: "2026-07-29"
+tags:
+  - "évaluation"
+  - "LLM"
+  - "qualité"
+draft: false
+---
+
+## Réponse directe
+
+**Évaluer un LLM**, c'est comparer ses sorties à un référentiel : questions types, réponses attendues ou critères humains. Faites-le à chaque évolution (prompt, modèle, chunking RAG) pour éviter les régressions silencieuses.
+
+## Pratique minimale
+
+1. 20–50 questions représentatives de votre usage
+2. Critères simples (correct / partiel / faux + format)
+3. Revue humaine sur les cas critiques
+4. Suivi coût et latence
+
+## Erreur fréquente
+
+Se fier au « vibe check » en démo. Les utilisateurs réels exposent des cas limites.
+
+## Suite
+
+[Qu'est-ce que le RAG ?](/blog/quest-ce-que-le-rag) · [Formation IA développeurs](/formations/coder-avec-ia).
+
+## Sources
+
+- Pratiques d'eval LLM / RAG dans l'industrie (rapports et docs outillage 2024–2026).

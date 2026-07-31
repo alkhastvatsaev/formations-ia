@@ -1,0 +1,32 @@
+---
+description: Copy Dale Carnegie — ton, structure, SEO extractible
+alwaysApply: true
+---
+
+# COPY CARNEGIE (site Formations IA)
+
+Appliquer sur tout texte public (pages, MDX, emails, CTA). Compatible SEO omni.
+
+## Toujours
+
+1. **Vous d'abord** : intérêt, désir ou peur du lecteur ; le formateur arrive comme preuve.
+2. **Appréciation sincère** de ce que le lecteur sait déjà (coder, diriger, livrer).
+3. **Désir ardent + motif noble** : livrer en prod, autonomie d'équipe, décisions honnêtes — pas une liste de modules seule.
+4. **Dramatiser** une scène courte (avant → atelier → après).
+5. **Écouter** : appel découverte = co-construction ; jamais closing agressif.
+6. **Faits** (prix, dates, inclus) pour réduire l'inquiétude.
+7. **Oui successifs** : micro-engagement (guide, checklist) avant paiement quand c'est pertinent.
+
+## Jamais
+
+- Critiquer d'autres formations, LMS, « slide theater », « blabla », concurrents.
+- Faire sentir le lecteur incompétent ou « en retard ».
+- Superlatifs vides, fausse urgence (déjà interdit projet).
+
+## SEO (ne pas casser)
+
+- Garder les intentions : « formation IA développeurs », « former son équipe à l'IA ».
+- Résumé d'ouverture = 2–3 phrases **citables**, réponse autonome à la question de la page.
+- FAQ : 1 Q = 1 réponse 40–80 mots, sans renvoi, sans dénigrement.
+- Prix, programme, dates : toujours en HTML texte (jamais client-only).
+- Title/description : uniques, intention conservée ; dramatisation dans le body, pas au détriment des mots-clés naturels.

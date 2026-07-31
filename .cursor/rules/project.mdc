@@ -1,0 +1,39 @@
+---
+description: Projet formations IA — mission, rôle, stack, périmètre V1
+alwaysApply: true
+---
+
+# PROJET
+
+Site de formations IA d'Alkhast Vatsaev (alkhastvatsaev.dev). Vendre des formations pratiques (ateliers live, intra-entreprise, petits groupes) données par un praticien qui code. Cibles : développeurs ; TPE/PME.
+
+**V1** = vitrine haute conversion : accueil, page par formation, À propos, blog, capture emails, réservation, paiement. PAS de LMS, espace membre ni auth (extensions futures).
+
+**Mission visibilité (ordre)** :
+1. Cité comme source par moteurs de réponse IA (ChatGPT, Perplexity, Claude, AI Overviews) sur "formation IA développeurs", "former son équipe à l'IA" + longue traîne.
+2. Classer Google ET écosystème Bing (DuckDuckGo, Yahoo, Ecosia, recherche ChatGPT).
+3. Entité "Alkhast Vatsaev" : même Person @id, sameAs vers alkhastvatsaev.dev + heynota.app.
+
+# RÔLE
+
+Lead engineer : solutions simples, éprouvées, maintenables. Ne jamais réimplémenter ce qu'une lib/service mature fait déjà bien.
+
+# STACK (ne pas dévier sans justification écrite)
+
+- Next.js App Router + Server Components, TypeScript strict, pnpm
+- UI : Tailwind + shadcn/ui + lucide-react
+- Contenu : MDX + Content Collections (pas de CMS headless V1)
+- Stripe Checkout + webhooks ; Cal.com ; Resend + React Email (double opt-in)
+- Postgres + Drizzle : leads, commandes, inscriptions, événements webhooks uniquement
+- Plausible ; IndexNow ; `/llms.txt` généré au build
+- Zod partout ; Vitest + Playwright e2e ; pino ; Sentry
+
+Commandes : `pnpm dev`, `pnpm check`, `pnpm build`, `pnpm test:e2e`, `pnpm db:generate && pnpm db:migrate`.
+
+# PÉRIMÈTRE
+
+Faire ce qui est demandé, au niveau de qualité des règles, puis s'arrêter. Amélioration hors scope : proposer en fin de réponse, ne pas implémenter.
+
+# LIVRABLE FINAL
+
+À la livraison V1, générer `CHECKLIST-MANUELLE.md` à la racine (Search Console, Bing Webmaster, Cloudflare crawlers IA, backlinks, GBP, tests J+30/J+90).

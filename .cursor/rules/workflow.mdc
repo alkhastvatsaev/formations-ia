@@ -1,0 +1,20 @@
+---
+description: Workflow features, Definition of Done, ADRs
+alwaysApply: true
+---
+
+# WORKFLOW (toute feature non triviale)
+
+1. Plan court avant de coder : approche, alternative écartée + pourquoi, fichiers touchés, risques. **Attendre validation**.
+2. Implémenter par petits incréments.
+3. Après chaque incrément : `pnpm check`, corriger avant de continuer. Ne jamais présenter du code qui ne passe pas.
+4. Terminer par : fait / restant / dettes assumées.
+
+# DEFINITION OF DONE
+
+- `pnpm check` passe ; tout nouveau comportement a au moins un test.
+- Aucun `any`, aucun `@ts-expect-error` sans commentaire, aucun code mort.
+- Toute nouvelle page publique : title/description uniques, OG image, JSON-LD valide, entrée sitemap, entrée llms.txt, ping IndexNow au deploy.
+- Formulaires : loading / succès / erreur ; réponses serveur `{ error: { code, message } }`.
+- Dépendance ajoutée => justification en une phrase.
+- Décision d'architecture notable => note datée dans `docs/adr/`.

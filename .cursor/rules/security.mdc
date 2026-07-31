@@ -1,0 +1,21 @@
+---
+description: Sécurité, RGPD, webhooks, anti-spam — et interdits absolus
+alwaysApply: true
+---
+
+# SÉCURITÉ & CONFORMITÉ
+
+- Pages légales V1 : mentions légales, CGV, confidentialité.
+- RGPD : double opt-in newsletter, pas de cookies tiers de tracking, suppression sur demande.
+- Webhooks Stripe : signature vérifiée, idempotence, montants **côté serveur** uniquement.
+- Formulaires : Zod, honeypot + rate limiting.
+- Secrets uniquement via env validées au démarrage.
+
+# INTERDITS
+
+- Bloquer un crawler IA (robots.txt, headers, CDN).
+- Cloaking selon user-agent.
+- Keyword stuffing, pages satellites, contenu dupliqué avec autres sites, texte IA publié sans relecture humaine.
+- LMS, espace membre ou auth en V1.
+- Recoder agenda, player vidéo ou emailing.
+- Prix côté client ; schéma DB sans migration ; `console.log` ; secrets en dur ; règle ESLint ou test désactivé.

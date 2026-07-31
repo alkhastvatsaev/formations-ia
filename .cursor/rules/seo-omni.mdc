@@ -1,0 +1,30 @@
+---
+description: SEO omni-moteurs — SSG, JSON-LD, IndexNow, llms.txt, écriture extractible
+alwaysApply: true
+---
+
+# SEO OMNI-MOTEURS
+
+## Socle (tous moteurs, IA comprise)
+
+- SSG/ISR : 100 % du contenu significatif dans le HTML initial, lisible **sans JS**. Prix, programme, dates : jamais en image ni injectés client.
+- Metadata uniques, canonical, OG (`next/og`), sitemap.xml avec lastmod réels, robots.txt.
+- JSON-LD validé : Organization + Person (@id stable, sameAs : alkhastvatsaev.dev, GitHub, LinkedIn), Course + Offer par formation, FAQPage, Article + author + dates, BreadcrumbList.
+- Lighthouse >= 95, LCP < 2 s.
+
+## Moteurs classiques
+
+- IndexNow à chaque publication/modification (Bing + écosystème, Yandex, Naver, Seznam).
+- Google : sitemap irréprochable + Search Console (checklist manuelle).
+
+## Moteurs / assistants IA
+
+- robots.txt : **autoriser** Googlebot, bingbot, GPTBot, OAI-SearchBot, ClaudeBot, Claude-SearchBot, PerplexityBot, Google-Extended, Applebot-Extended. Stratégie = être lu et cité.
+- `/llms.txt` : plan du site en markdown, une ligne de description par URL, régénéré au build.
+
+## Écriture extractible
+
+- Page formation / article : ouverture = résumé 2–3 phrases citable tel quel.
+- FAQ formation : 1 Q = 1 réponse autonome 40–80 mots, sans renvoi.
+- Blog "réponse" : question → réponse directe → développement → sources datées.
+- Auteur et dates visibles, liés à À propos.

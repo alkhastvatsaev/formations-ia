@@ -1,0 +1,12 @@
+---
+description: Conversion — CTA unique, preuve, parcours achat, mobile-first
+alwaysApply: true
+---
+
+# CONVERSION
+
+- Un seul CTA principal par page.
+- Preuve avant promesse : projets réels, GitHub, témoignages nominatifs. Jamais de superlatifs vides, faux compteurs ni fausse urgence.
+- Capture d'email contre contrepartie concrète ; formulaire minimal.
+- Parcours achat : page formation → Stripe Checkout → confirmation + email récap. Aucune création de compte.
+- Mobile d'abord.

@@ -1,0 +1,25 @@
+---
+description: Attention & lisibilité — charge cognitive, Hick, scannabilité
+alwaysApply: true
+---
+
+# ATTENTION / CONCENTRATION
+
+Objectif : lecture simple, une décision claire, zéro perte par confusion ou ennui. Compatible SEO + Carnegie.
+
+## Règles
+
+1. **Une idée par section** ; un CTA principal par page.
+2. **Hick** : max 2 chemins d'action visibles au-dessus de la fold (primary + secondary).
+3. **Chunking** : listes ≤ 5 items ; paragraphes courts (≤ ~3 lignes).
+4. **F-pattern** : début de ligne = info utile ; sous-titres scannables (verbes / bénéfices).
+5. **Signal > bruit** : décoration limitée au hero ; pages contenu calmes.
+6. **Sériel** : essentiel (prix, pour qui, CTA) tôt ; récap + CTA en fin.
+7. **Sommaire ancré** sur pages longues (formations).
+8. **Lisibilité** : `leading` généreux, largeur prose limitée, contraste texte OK.
+
+## Interdit
+
+- Dupliquer la même offre sous 3 formes sur la même page.
+- H1-pavé multi-intentions.
+- Rivaliser avec le texte (motifs, animations agressives).

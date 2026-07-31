@@ -1,0 +1,36 @@
+---
+title: "Formation agents IA : boucles, outils et limites"
+slug: "formation-agents-ia"
+summary: "Une formation sur les agents IA explique comment un LLM enchaîne des actions via des outils (recherche, API, code) dans une boucle. Utile quand la tâche dépasse une seule réponse : attention aux coûts, boucles infinies et validation humaine."
+description: "Comprendre les agents IA pour développeurs : architecture, tool calling, risques, et quand préférer un workflow simple."
+publishedAt: "2026-07-24"
+updatedAt: "2026-07-29"
+tags:
+  - "agents"
+  - "LLM"
+  - "formation IA"
+draft: false
+---
+
+## Réponse directe
+
+Un **agent IA** est un système où le modèle **décide d'appeler des outils** (fonctions, navigateurs, bases) puis réutilise le résultat pour continuer. Une formation agents IA pour développeurs montre comment construire ces boucles, les limiter, et les observer.
+
+## Quand un agent a du sens
+
+- Tâches multi-étapes (rechercher → calculer → rédiger)
+- Besoin d'agir sur des systèmes (tickets, CRM) avec contrôle
+
+## Quand l'éviter
+
+- Une seule requête RAG suffit
+- Coût / latence critiques sans garde-fous
+- Actions irréversibles sans validation humaine
+
+## Suite
+
+Cet article explique le vocabulaire. Nos ateliers couvrent le **premier niveau** (prompts, IDE) : [coder avec l'IA](/formations/coder-avec-ia) · [premiers pas IA](/formations/premiers-pas-ia). Un track agents / RAG avancé n'est pas au catalogue.
+
+## Sources
+
+- Docs tool use / function calling des principaux fournisseurs LLM.

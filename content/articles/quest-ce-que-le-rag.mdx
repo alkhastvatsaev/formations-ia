@@ -1,0 +1,50 @@
+---
+title: "Qu'est-ce que le RAG ? Explication pour développeurs"
+slug: "quest-ce-que-le-rag"
+summary: "Le RAG (Retrieval-Augmented Generation) combine recherche documentaire et LLM : on récupère des passages pertinents, puis on les injecte dans le prompt pour répondre avec le contexte de votre base. Utile quand le modèle seul n'a pas vos données."
+description: "Définition du RAG pour développeurs : architecture, chunking, embeddings, évaluation, limites et alternatives. Guide pratique avec sources."
+publishedAt: "2026-07-10"
+updatedAt: "2026-07-29"
+tags:
+  - "RAG"
+  - "LLM"
+  - "architecture"
+draft: false
+---
+
+## Réponse directe
+
+Le **RAG** (Retrieval-Augmented Generation) est un pattern d'architecture : avant de générer une réponse, un système **récupère** des documents ou fragments pertinents dans votre corpus, puis les **passe au LLM** comme contexte. Le modèle répond à partir de ces sources plutôt que de « se souvenir » de données qu'il n'a jamais vues.
+
+## Pourquoi les équipes techniques l'utilisent
+
+Les LLM ont une connaissance figée et une fenêtre de contexte limitée. Le RAG permet d'ancrer les réponses dans **votre** documentation, tickets, ou code — avec une piste d'audit (quels chunks ont été utilisés).
+
+Cas typiques : assistant sur une doc interne, Q&A produit, aide au support, copilote sur un dépôt.
+
+## Architecture minimale
+
+1. **Ingestion** : découper les documents (chunking), calculer des embeddings, stocker vecteurs + métadonnées.
+2. **Requête** : embedder la question, rechercher les top-k chunks (similarité, éventuellement filtre métadonnées).
+3. **Génération** : construire un prompt avec question + chunks, appeler le LLM, renvoyer la réponse (et idéalement les citations).
+
+## Pièges fréquents
+
+- Chunks trop grands ou trop petits → rappel médiocre.
+- Aucune **évaluation** (golden set de questions) → regressions invisibles.
+- Faire confiance au modèle pour « inventer » si le retrieval rate : toujours prévoir un comportement « je ne sais pas ».
+
+## Alternatives et compléments
+
+- Fine-tuning : utile pour le style / format, rarement pour injecter des faits volatils.
+- Tool calling / agents : quand il faut *agir* (API, SQL), pas seulement lire de la doc.
+- Long-context : parfois suffisant pour petits corpus ; le coût et le bruit augmentent vite.
+
+## Suite
+
+Le RAG est un vocabulaire utile à connaître. Nos ateliers commencent au **premier niveau** (prompts, IDE) : [coder avec l'IA](/formations/coder-avec-ia) · [premiers pas IA](/formations/premiers-pas-ia).
+
+## Sources
+
+- Lewis et al., *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks* (2020).
+- Documentation opérationnelle des fournisseurs LLM (OpenAI, Anthropic) sur tool use et embeddings — à consulter à la date de mise en prod.
