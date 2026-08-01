@@ -2,13 +2,18 @@
 
 Site live : **https://formations.alkhastvatsaev.dev**
 
-## Déjà fait (auto)
+## Indexation Bing (déjà lancé)
 
-- [x] Deploy Vercel `formations-ia`
-- [x] Domaine `formations.alkhastvatsaev.dev`
-- [x] IndexNow ping (41 URLs, HTTP 202)
-- [x] Lien footer portfolio → Formations IA
-- [x] Repo GitHub : https://github.com/alkhastvatsaev/formations-ia
+- [x] IndexNow → `www.bing.com/indexnow` : **41 URLs, HTTP 200**
+- [x] IndexNow hub : 41 URLs, HTTP 200
+- [ ] Optionnel : clé `BING_WEBMASTER_API_KEY` (Bing Webmaster → Settings → API Access) puis `pnpm bing:index` pour SubmitUrlBatch
+
+Commande :
+```bash
+NEXT_PUBLIC_SITE_URL=https://formations.alkhastvatsaev.dev \
+INDEXNOW_KEY=dd1cc6e2ee414e73a71d066ef0f7fc9d \
+pnpm bing:index
+```
 
 ## À faire par toi (10–20 min) — indexation Google
 

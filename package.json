@@ -17,6 +17,7 @@
     "db:studio": "drizzle-kit studio",
     "content:build": "content-collections build",
     "indexnow:ping": "node scripts/ping-indexnow.mjs",
+    "bing:index": "node scripts/ping-indexnow.mjs",
     "postinstall": "content-collections build || true"
   },
   "dependencies": {

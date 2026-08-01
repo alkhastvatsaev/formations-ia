@@ -22,6 +22,7 @@ const envSchema = z.object({
     .default("https://cal.com/alkhastvatsaev/decouverte"),
   NEXT_PUBLIC_PLAUSIBLE_DOMAIN: z.string().optional(),
   INDEXNOW_KEY: z.string().optional(),
+  BING_WEBMASTER_API_KEY: z.string().optional(),
   SENTRY_DSN: z.string().optional(),
   NEXT_PUBLIC_SENTRY_DSN: z.string().optional(),
   RATE_LIMIT_MAX: z.coerce.number().int().positive().default(10),
