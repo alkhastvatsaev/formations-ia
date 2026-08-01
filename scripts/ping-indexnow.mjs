@@ -82,7 +82,8 @@ for (const { url: endpoint, label } of indexNowEndpoints) {
 
 /** Bing Webmaster URL Submission API (optional, needs API key from BWT). Max 500/batch. */
 if (bingApiKey) {
-  const siteUrl = new URL(site).origin;
+  // Bing stores verified sites with a trailing slash
+  const siteUrl = `${new URL(site).origin}/`;
   const batchSize = 500;
   for (let i = 0; i < urls.length; i += batchSize) {
     const urlList = urls.slice(i, i + batchSize);
